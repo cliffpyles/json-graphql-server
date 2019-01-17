@@ -1,15 +1,8 @@
 # json-graphql-server
 
+\* This is a fork and is primarily used for personal use. The original can be found at: https://github.com/marmelab/json-graphql-server
+
 Get a full fake GraphQL API with zero coding in less than 30 seconds.
-
-## Motivation
-
-> I'd love to learn GraphQL, but it seems that I first have to read a book about GraphQL Types and Queries, then install a gazillion npm packages.
-> - About every developer
-
-Start playing with GraphQL right away with `json-graphql-server`, a testing and mocking tool for GraphQL. All it takes is a JSON of your data.
-
-Inspired by the excellent [json-server](https://github.com/typicode/json-server).
 
 ## Example
 
@@ -82,12 +75,6 @@ Go to http://localhost:3000/?query=%7B%20Post%28id%3A%201%29%20%7B%20id%20title%
 }
 ```
 
-The json-graphql-server accepts queries in GET and POST. Under the hood, it uses [the `express-graphql` module](https://github.com/graphql/express-graphql). Please refer to their documentations for details about passing variables, etc.
-
-Note that the server is [GraphiQL](https://github.com/skevy/graphiql-app/releases) enabled, so you can query your server using a full-featured graphical user interface, providing autosuggest, history, etc.
-
-![GraphiQL client using json-graphql-server](http://static.marmelab.com/graphiql-json.png)
-
 ## Install
 
 ```sh
@@ -96,7 +83,7 @@ npm install -g @cliffpyles/json-graphql-server
 
 ## Generated Types and Queries
 
-Based on your data, json-graphql-server will generate a schema with one type per entity, as well as 3 query types and 3 mutation types. For instance for the `Post` entity:
+Based on the data given, json-graphql-server will generate a schema with one type per entity, as well as 3 query types and 3 mutation types. For instance for the `Post` entity:
 
 ```graphql
 type Query {
@@ -551,6 +538,3 @@ make watch
 make format
 ```
 
-## License
-
-Admin-on-rest is licensed under the [MIT Licence](https://github.com/marmelab/json-graphql-server/blob/master/LICENSE.md), sponsored and supported by [marmelab](http://marmelab.com).
